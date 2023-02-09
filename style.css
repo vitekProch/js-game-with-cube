@@ -23,13 +23,6 @@
     display: flex;
     justify-content: space-around;
 }
-/* -------------- MENU SETTING -------------- */
-.menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 /* -------------- PLAYERS SETTING -------------- */
 .player-information-0, .player-information-1{
     display: flex;
@@ -49,7 +42,7 @@
 }
 .score-box-0.active,
 .score-box-1.active{
-    background-color: #ff8537;
+    background-color: #ff7c2c;
     padding: 5px;
     border-radius: 5px;
 }
@@ -59,6 +52,7 @@
     display: inline-block;
     text-align: center;
     padding: 10px 3px 25px 3px;
+    border-radius: 3px;
 }
 
 .score-player-0, .score-player-1{
@@ -69,3 +63,27 @@
     margin-top: 20px;
     font-size: 30px;
 }
+
+/* -------------- MENU SETTING -------------- */
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 50px;
+    gap: 10px;
+}
+.menu li{
+    width: 150px;
+    background-color: #fc8f62;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.menu li:hover{
+    background-color: #ff5d1a;
+}
+
