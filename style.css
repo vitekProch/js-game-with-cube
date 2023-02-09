@@ -1,8 +1,10 @@
+/* -------------- MAIN SETTING -------------- */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* -------------- PAGE SETTING -------------- */
 .allPage{
     display: flex;
     justify-content: center;
@@ -11,8 +13,20 @@
     height: 100vh;
     background-image: linear-gradient(red, black);
 }
+/* -------------- FIELD SETTING -------------- */
 .field{
     width: 80%;
     height: 80%;
     background-color: #fff;
+}
+.playField{
+    display: flex;
+    justify-content: space-around;
+}
+/* -------------- MENU SETTING -------------- */
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
