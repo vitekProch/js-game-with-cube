@@ -1,0 +1,154 @@
+:root{
+    --cube_size: 100px;
+    --cube_color: #fff;
+    --dot_size: 20px;
+    --dot_color: #000;
+}
+/* ----------- CUBE STYLE -----------  */
+#cube{
+    position: relative;
+    top: 180px;
+    width: var(--cube_size);
+    height: var(--cube_size);
+    background-color: var(--cube_color);
+}
+/* ----------- DOT STYLE -----------  */
+.dot{
+    position: absolute;
+    width: var(--dot_size);
+    height: var(--dot_size);
+    background-color: var(--dot_color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: left 1s, top 1s;
+}
+/* ----------- NUMBER ONE -----------  */
+.dot.one{
+    left: 50%;
+    top: 50%;
+}
+/* ----------- NUMBER TWO -----------  */
+.dot.two:nth-child(1){
+    left: 25%;
+    top: 25%;
+}
+.dot.two:nth-child(2){
+    left: 75%;
+    top: 75%;
+}
+.dot.two:nth-child(3){
+    left: 25%;
+    top: 25%;
+}
+.dot.two:nth-child(4){
+    left: 75%;
+    top: 75%;
+}
+.dot.two:nth-child(5){
+    left: 25%;
+    top: 25%;
+}
+.dot.two:nth-child(6){
+    left: 75%;
+    top: 75%;
+}
+/* ----------- NUMBER THREE -----------  */
+.dot.three:nth-child(1){
+    left: 75%;
+    top: 75%;
+}
+.dot.three:nth-child(2){
+    left: 50%;
+    top: 50%;
+}
+.dot.three:nth-child(3){
+    left: 25%;
+    top: 25%;
+}
+.dot.three:nth-child(4){
+    left: 25%;
+    top: 25%;
+}
+.dot.three:nth-child(5){
+    left: 50%;
+    top: 50%;
+}
+.dot.three:nth-child(6){
+    left: 75%;
+    top: 75%;
+}
+/* ----------- NUMBER FOUR -----------  */
+.dot.four:nth-child(1){
+    left: 25%;
+    top: 75%;
+}
+.dot.four:nth-child(2){
+    left: 75%;
+    top: 75%;
+}
+.dot.four:nth-child(3){
+    left: 25%;
+    top: 75%;
+}
+.dot.four:nth-child(4){
+    left: 75%;
+    top: 25%;
+}
+.dot.four:nth-child(5){
+    left: 25%;
+    top: 25%;
+}
+.dot.four:nth-child(6){
+    left: 75%;
+    top: 25%;
+}
+/* ----------- NUMBER FIVE -----------  */
+.dot.five:nth-child(1){
+    left: 25%;
+    top: 25%;
+}
+.dot.five:nth-child(2){
+    left: 25%;
+    top: 75%;
+}
+.dot.five:nth-child(3){
+    left: 75%;
+    top: 75%;
+}
+.dot.five:nth-child(4){
+    left: 50%;
+    top: 50%;
+}
+.dot.five:nth-child(5){
+    left: 25%;
+    top: 75%;
+}
+.dot.five:nth-child(6){
+    left: 75%;
+    top: 25%;
+}
+/* ----------- NUMBER SIX -----------  */
+.dot.six:nth-child(1){
+    left: 75%;
+    top: 75%;
+}
+.dot.six:nth-child(2){
+    left: 25%;
+    top: 50%;
+}
+.dot.six:nth-child(3){
+    left: 75%;
+    top: 50%;
+}
+.dot.six:nth-child(4){
+    left: 25%;
+    top: 25%;
+}
+.dot.six:nth-child(5){
+    left: 75%;
+    top: 25%;
+}
+.dot.six:nth-child(6){
+    left: 25%;
+    top: 75%;
+}
