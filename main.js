@@ -2,7 +2,7 @@ let finalScore = [0,0];
 let roundScore = 0;
 let cubeNumbers = ["one" ,"two" ,"three" ,"four" ,"five" ,"six"];
 let actualPlayer = 0;
-let winScore = 100;
+let winScore = 10;
 
 function cleanStart(){
     finalScore = [0,0];
@@ -55,6 +55,9 @@ document.getElementById("saveScore").addEventListener("click", function (){
 
 function winGame(){
     document.querySelector(".player-name-" + actualPlayer).textContent = "Vítěz! Vítěz!";
+
+    document.getElementById("rollCube").classList.add("disabled");
+    document.getElementById("saveScore").classList.add("disabled");
 }
 
 function nextPlayer(){
