@@ -86,4 +86,7 @@
 .menu li:hover{
     background-color: #ff5d1a;
 }
-
+.disabled{
+    pointer-events: none;
+    opacity: 45%;
+}
