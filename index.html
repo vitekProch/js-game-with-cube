@@ -6,46 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cube.css">
+    <link rel="stylesheet" href="queries.css">
     <title>Kostky</title>
 </head>
 <body>
     <div class="allPage">
         <div class="field">
-            <div class="playField">
-                <div class="player-information-0">
-                    <div class="score-box-0 active">
-                        <h2 class="player-name-0">Skóre 1. hráče</h2>
-                        <div class="score-player-0">0</div>
+            <div class="container">
+                <div class="playField">
+                    <div class="player-information-0">
+                        <div class="score-box-0 active">
+                            <h2 class="player-name-0">Skóre 1. hráče</h2>
+                            <div class="score-player-0">0</div>
+                        </div>
+                        <div class="current-score-box-0">
+                            <h3>Současné skóre</h3>
+                            <div class="current-score-player-0">0</div>
+                        </div>
                     </div>
-                    <div class="current-score-box-0">
-                        <h3>Současné skóre</h3>
-                        <div class="current-score-player-0">0</div>
+                    <div id="cube" class="hidden">
+                        <div class="dot six"></div>
+                        <div class="dot six"></div>
+                        <div class="dot six"></div>
+                        <div class="dot six"></div>
+                        <div class="dot six"></div>
+                        <div class="dot six"></div>
+                    </div>
+                    <div class="player-information-1">
+                        <div class="score-box-1">
+                            <h2 class="player-name-1">Skóre 2. hráče</h2>
+                            <div class="score-player-1">0</div>
+                        </div>
+                        <div class="current-score-box-1">
+                            <h3>Současné skóre</h3>
+                            <div class="current-score-player-1">0</div>
+                        </div>
                     </div>
                 </div>
-                <div id="cube" class="hidden">
-                    <div class="dot six"></div>
-                    <div class="dot six"></div>
-                    <div class="dot six"></div>
-                    <div class="dot six"></div>
-                    <div class="dot six"></div>
-                    <div class="dot six"></div>
-                </div>
-                <div class="player-information-1">
-                    <div class="score-box-1">
-                        <h2 class="player-name-1">Skóre 2. hráče</h2>
-                        <div class="score-player-1">0</div>
-                    </div>
-                    <div class="current-score-box-1">
-                        <h3>Současné skóre</h3>
-                        <div class="current-score-player-1">0</div>
-                    </div>
-                </div>
+                <ul class="menu">
+                    <li id="rollCube">Hodit kostkou</li>
+                    <li id="saveScore">Zachovat skóre</li>
+                    <li id="newGame">Nová hra</li>
+                </ul>
             </div>
-            <ul class="menu">
-                <li id="rollCube">Hodit kostkou</li>
-                <li id="saveScore">Zachovat skóre</li>
-                <li id="newGame">Nová hra</li>
-            </ul>
         </div>
     </div>
 </body>

@@ -11,7 +11,7 @@
     width: var(--cube_size);
     height: var(--cube_size);
     background-color: var(--cube_color);
-    transition:rotate 1.3s, opacity 1.3s linear, height 1.3s step-start;
+    transition:rotate 1.3s, opacity 1.3s linear, height 1.3s step-start, width 0.2s, height 0.2s;
 }
 /* ----------- HIDE CUBE -----------  */
 .hidden {
@@ -28,7 +28,7 @@
     background-color: var(--dot_color);
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    transition: left 1.3s, top 1.3s;
+    transition: width 0.2s, height 0.2s, left 1.3s, top 1.3s;
 }
 /* ----------- NUMBER ONE -----------  */
 .dot.one{

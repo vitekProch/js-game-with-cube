@@ -18,11 +18,15 @@
     width: 80%;
     height: 80%;
     background-color: #ffd5a5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .playField{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
+
 /* -------------- PLAYERS SETTING -------------- */
 .player-information-0, .player-information-1{
     display: flex;
