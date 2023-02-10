@@ -2,7 +2,7 @@ let finalScore = [0,0];
 let roundScore = 0;
 let cubeNumbers = ["one" ,"two" ,"three" ,"four" ,"five" ,"six"];
 let actualPlayer = 0;
-let winScore = 100;
+let winScore = 10;
 let cubeRotate = 180;
 
 // ----------- ROLL CUBE AND CURRENT SCORE UPDATE -----------
@@ -12,6 +12,7 @@ document.getElementById("rollCube").addEventListener("click", function (){
    let actualNumber = cube.children[0].classList[1];
    cubeRotate *= (-1);
    cube.style.rotate = cubeRotate + "deg";
+   cube.classList.remove("hidden");
     // Getting cube dot and add class by random number.
    for(let i = 0; i < cube.children.length; i++){
        cube.children[i].classList.remove(actualNumber);
@@ -56,6 +57,8 @@ document.getElementById("newGame").addEventListener("click", function (){
 
     document.getElementById("rollCube").classList.remove("disabled");
     document.getElementById("saveScore").classList.remove("disabled");
+
+    document.getElementById("cube").classList.toggle("hidden");
 });
 
 function winGame(){
@@ -63,6 +66,7 @@ function winGame(){
 
     document.getElementById("rollCube").classList.add("disabled");
     document.getElementById("saveScore").classList.add("disabled");
+
 }
 
 function nextPlayer(){

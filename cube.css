@@ -11,7 +11,14 @@
     width: var(--cube_size);
     height: var(--cube_size);
     background-color: var(--cube_color);
-    transition: rotate 1.3s;
+    transition:rotate 1.3s, opacity 1.3s linear, height 1.3s step-start;
+}
+/* ----------- HIDE CUBE -----------  */
+.hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition-timing-function: linear, step-end;
 }
 /* ----------- DOT STYLE -----------  */
 .dot{
