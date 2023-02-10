@@ -2,7 +2,7 @@ let finalScore = [0,0];
 let roundScore = 0;
 let cubeNumbers = ["one" ,"two" ,"three" ,"four" ,"five" ,"six"];
 let actualPlayer = 0;
-let winScore = 10;
+let winScore = 100;
 let cubeRotate = 180;
 
 // ----------- ROLL CUBE AND CURRENT SCORE UPDATE -----------
