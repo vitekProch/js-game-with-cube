@@ -2,6 +2,7 @@ let finalScore = [0,0];
 let roundScore = 0;
 let cubeNumbers = ["one" ,"two" ,"three" ,"four" ,"five" ,"six"];
 let actualPlayer = 0;
+let winScore = 100;
 
 function cleanStart(){
     finalScore = [0,0];
@@ -21,7 +22,7 @@ function cleanStart(){
     document.querySelector(".player-name-1").textContent = "Skóre 2. hráče";
 }
 
-// ----------- ROLL CUBE -----------
+// ----------- ROLL CUBE AND CURRENT SCORE UPDATE -----------
 document.getElementById("rollCube").addEventListener("click", function (){
    let cube = document.getElementById("cube");
    let randomNumber = Math.floor(Math.random()*cubeNumbers.length);
@@ -40,6 +41,21 @@ document.getElementById("rollCube").addEventListener("click", function (){
        nextPlayer();
    }
 });
+// ----------- SAVE SCORE, SCORE UPDATE -----------
+document.getElementById("saveScore").addEventListener("click", function (){
+    finalScore[actualPlayer] += roundScore;
+    document.querySelector(".score-player-" + actualPlayer).textContent = finalScore[actualPlayer];
+    if (finalScore[actualPlayer] >= winScore){
+        winGame();
+    }
+    else{
+        nextPlayer();
+    }
+});
+
+function winGame(){
+    document.querySelector(".player-name-" + actualPlayer).textContent = "Vítěz! Vítěz!";
+}
 
 function nextPlayer(){
     roundScore = 0;
